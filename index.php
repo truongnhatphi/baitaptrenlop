@@ -41,6 +41,7 @@
 		}
 		
 ?>
+<form>
 <div> Nhập canh A </div>
 <input name="a" type="text" id ="a" value="<?php echo $_POST["a"];?>" />
 <br>
@@ -50,7 +51,7 @@
 <div> Nhập canh C </div>
 <input name="c" type="text" id ="c" value="<?php echo $_POST["c"];?>" />
 <input name="ketqua">
-<input type="button" name="check" onclick="getdata()" />
-
+<input type="button" name="check" onClick="getdata()" />
+</form>
 
 

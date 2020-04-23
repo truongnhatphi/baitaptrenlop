@@ -18,11 +18,11 @@
 <body>
 <h1>Xét Tam giác :</h1>
 <?php
-	if(isset($_POST["a"]) && isset($_POST["b"]) && isset($_POST["c"]))
+	if(isset($_GET["a"]) && isset($_GET["b"]) && isset($_GET["c"]))
 		{
-			$a = $_POST["a"];
-			$b = $_POST["b"];
-			$c = $_POST["c"];
+			$a = $_GET["a"];
+			$b = $_GET["b"];
+			$c = $_GET["c"];
 			if( $a +$b > $c && $a+$c>$b && $b+$c > $a)
 			{
 				if($a==$b && $b==$c)
@@ -41,17 +41,15 @@
 		}
 		
 ?>
-<form>
+<form nethod="GET">
 <div> Nhập canh A </div>
-<input name="a" type="text" id ="a" value="<?php echo $_POST["a"];?>" />
+<input name="a" type="text" id ="a" value="<?php echo $_GET["a"];?>" />
 <br>
 <div> Nhập canh B </div>
-<input name="b" type="text" id ="b" value="<?php echo $_POST["b"];?>" />
+<input name="b" type="text" id ="b" value="<?php echo $_GET["b"];?>" />
 <br>
 <div> Nhập canh C </div>
-<input name="c" type="text" id ="c" value="<?php echo $_POST["c"];?>" />
+<input name="c" type="text" id ="c" value="<?php echo $_GET["c"];?>" />
 <input name="ketqua">
 <input type="button" name="check" onClick="getdata()" />
 </form>
-
-
